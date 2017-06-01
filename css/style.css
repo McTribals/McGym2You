@@ -6,3 +6,7 @@
 .page-footer{
     background: grey !important;
 }
+
+p{
+    text-align: justify;
+}
