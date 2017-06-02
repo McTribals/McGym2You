@@ -40,16 +40,22 @@
             </div>
         </nav>
         
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/1.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/2.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/3.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/4.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/5.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/6.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/7.jpg"></a>
-            <a class="carousel-item" href="#one!"><img class="materialboxed" width="200" height="200" src="Img/Home/8.jpg"></a>
+        <br />
+        
+        <div class="container">
+            <div class="carousel carousel-slider">                
+                <a class="carousel-item" href="#one!"><img src="Img/Home/1.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/2.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/3.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/4.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/5.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/6.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/7.jpg" alt="" width="700" height="450"></a>
+                <a class="carousel-item" href="#one!"><img src="Img/Home/8.jpg" alt="" width="700" height="450"></a>
+            </div>
         </div>
+        
+        <br />
         
         <footer class="page-footer">
             <table style="width:20%; margin-left:auto; margin-right:auto;">
@@ -93,18 +99,10 @@
             // Menu
             
             $(".button-collapse").sideNav();
+        
+            // Carrucel
             
-            //Carrucel
-            
-            $(document).ready(function(){
-                $('.carousel').carousel();
-            });
-
-            // Imagen
-            
-            $(document).ready(function(){
-                $('.materialboxed').materialbox();
-            });
+             $('.carousel.carousel-slider').carousel({fullWidth: true});
             
         </script>
     

@@ -10,3 +10,7 @@
 p{
     text-align: justify;
 }
+
+.video-container{
+    height: 95% !Important;
+}
