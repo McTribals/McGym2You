@@ -68,7 +68,7 @@
 	}
 
 	p{
-		margin:0 0 5px;
+		margin:0 0 5px;        
 	}
 
 	.clear{
@@ -411,19 +411,43 @@
 	}
 
 	#slides .slides-container .image1{
-		background-image:url(../images/5.jpg);
+		background-image:url(../images/Home/1.jpg);
 	}
 
 	#slides .slides-container .image2{
-		background-image:url(../images/4.jpg);
+		background-image:url(../images/Home/2.jpg);
 	}
 
 	#slides .slides-container .image3{
-		background-image:url(../images/3.jpg);
+		background-image:url(../images/Home/3.jpg);
 	}
 
 	#slides .slides-container .image4{
-		background-image:url(../images/1.jpg);
+		background-image:url(../images/Home/4.jpg);
+	}
+
+	#slides .slides-container .image5{
+		background-image:url(../images/Home/5.jpg);
+	}
+
+	#slides .slides-container .image6{
+		background-image:url(../images/Home/6.jpg);
+	}
+
+	#slides .slides-container .image7{
+		background-image:url(../images/Home/7.jpg);
+	}
+
+	#slides .slides-container .image8{
+		background-image:url(../images/Home/8.jpg);
+	}
+
+	#slides .slides-container .image9{
+		background-image:url(../images/Home/9.jpg);
+	}
+
+	#slides .slides-container .image10{
+		background-image:url(../images/Home/10.jpg);
 	}
 
 	.v2 .home-arrow{

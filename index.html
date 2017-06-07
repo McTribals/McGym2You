@@ -1,16 +1,40 @@
+<!-- PENDIENTES **********************************************
+
+ 1. nav = oscurecer un poco mas el gris
+ 2. Cambiar letra del formulario (Georgia)
+ 3. (Home) Austar imagenes Home
+ 4. (Home) Ajustar (Moldea tu cuerpo y mente con GYM2You) cuando se ve desde un dispositivo movil
+ 5. (Quienes somos) Cuando se ajusta a un dispositivo movil dejar un margen a los costados de 5%;
+ 6. (planes) cambiar color .hover azul mas oscuro
+ 7. (planes) modal con la informacion
+ 8. (tendencias) cambiar color .hover azul mas oscuro
+ 9. (tendencias) modal con la informacion
+10. (noticias) Cambiar fondo  
+11. (Galeria) crear galeria para imagen 
+12. (Galeria) crear galeria video
+13. (Suplementos y Accesorios) cambiar color .hover azul mas oscuro
+14. (Suplementos y Accesorios) modal con la informacion
+ 
+15. Modal al ingresar al sitio con sesion de cortesia if( el usuario da click){desplegar un fomulario solicitando datos}else{cerrar modal}
+16. ventana flotante al lado derecho inferior recordadndo la sesion de cortesia
+17. Musica de fondo al ingresar a la pagina
+  
+   -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
     <meta charset="utf-8" />
-    <title>Fitness</title>
-    <meta name="description" content="" />
+    <title>Gym2You</title>
+    <meta name="description" content="Entrenador en tu casa" />
+    <meta name="keywords" content="gimnasio, entrenador personal, entrenando en casa, entrenador en casa">
+    <meta name="author" content="Jefferson A. Merchan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <!--Favicon -->
 	<link rel="icon" type="image/png" href="images/Logo/favicon_16x16.png" />
 
-	<!-- CSS Files -->
 	<link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/animate.min.css" />
@@ -22,448 +46,741 @@
 	<link rel="stylesheet" href="css/player/YTPlayer.css" />
 	<link href="css/pro-bars.css" rel="stylesheet" />
 
-
-	<!-- End CSS Files -->
-
 </head>
 
 <body>
 
-	<!-- Navigation -->
+    <!-- Menu -->
 	<section id="navigation" class="dark-nav">
-		<!-- Navigation Inner -->
 		<div class="nav-inner">
-			<!-- Site Logo -->
 			<div class="site-logo">
-				<a href="#home" id="logo-text" class="scroll logo"><img  class="scroll" src="images/Logo/200.png" alt="">
+				<a href="#home" id="logo-text" class="scroll logo"><img  class="scroll" src="images/Logo/200H.png" alt="">
 				</a>
-			</div><!-- End Site Logo -->
+			</div>
 			<a class="mini-nav-button gray2"><i class="fa fa-bars"></i></a>
-			<!-- Navigation Menu -->
 		    <div class="nav-menu">
 				<ul class="nav uppercase">
+				
 					<li><a href="#about" class="scroll">Quienes Somos</a></li>
-					<li><a href="#features" class="scroll">Planes y Servicios</a></li>
-					<li><a href="#clients" class="scroll">Tendencias</a></li>
-					<li><a href="#testimonial" class="scroll">Noticias Fit</a></li>
-					<li><a href="#contact" class="scroll">Contactenos</a></li>
+					<li><a href="#PlanesServicios" class="scroll">Planes</a></li>
+					<li><a href="#Tendencias" class="scroll">Tendencias</a></li>
+					<li><a href="#testimonial" class="scroll">Noticias Fit</a></li>			
+                    <li><a href="#galeria" class="scroll">Galería G2Y</a></li>
+					<li><a href="#supelementos" class="scroll">Accesorios</a></li>
+                    <li><a href="#contact" class="scroll">Contactenos</a></li>		
+                    					
 				</ul>
-		  </div><!-- End Navigation Menu -->
-		</div><!-- End Navigation Inner -->
-	</section><!-- End Navigation Section -->
+		  </div>
+		</div>
+	</section>
 
-
-	<!-- Home Section -->
+    <!-- Inicio -->
 	<section id="home" class="relative">
 		<div id="slides">
 			<div class="slides-container relative">
-				<!-- Slider Images -->
-				<div class="image2"></div>
                 <div class="image1"></div>
+                <div class="image2"></div>                
 				<div class="image3"></div>
                 <div class="image4"></div>
-				 <!-- End Slider Images -->
+                <div class="image5"></div>				 
+                <div class="image6"></div>				 
+                <div class="image7"></div>				 
+                <div class="image8"></div>				 
+                <div class="image9"></div>				 
+                <div class="image10"></div>				 				 
 			</div>
-			<!-- Slider Controls -->
 			<nav class="slides-navigation">
 			  <a href="#" class="next"></a>
 			  <a href="#" class="prev"></a>
 			</nav>
-		</div><!-- End Home Slides -->
+		</div>
 		<div class="v2 absolute">
-			<!-- Auto Typocraphic Texts -->
 			<div class="typographic">
-            	<!-- Your Logo -->
 				<div class="logo">
-
 				</div>
 				<h2 class="condensed uppercase no-padding no-margin bold gray1 size">Moldea tu cuerpo y mente con</h2>
 				<h2 class="condensed uppercase no-padding no-margin bold colored size2"> Gym2You</h2>
 				<a href="#about" class="scroll"><i class="arrow-down fa fa-3x fa-angle-double-down"></i></a>
-			</div><!--End Auto Typocraphic Texts -->
-		</div><!-- End V2 area -->
-	</section><!-- End Home Section -->
+			</div>
+		</div>
+	</section>
 
-
-	<!-- Fun Acts -->
-	<section id="fun-acts" class="container">
-
-		<div class="inner fun-acts">
-        <div class="about-margin"></div>
-        <!-- <a class="about-icon">
-			<i class="fa fa-life-ring"></i>
-		 </a>
-        <br /> -->
-
-			<!-- Header
-			<h1 class="header light gray1 animated" data-animation="fadeInLeft" data-animation-delay="400">
-			 Winners Train,<span class="colored" data-animation="fadeInRight">Losers Complain</span></h1>
-			<!-- Description
-			<p class="h-desc"><span class="colored">lorem Ipsum is lorem Ipsum</span> lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum. lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum is simple.</p>
-
-		</div><!-- End Fun Acts Inner -->
-
-	</section><!-- End Fun Acts Section -->
-
-    <!-- About -->
+    <!-- Conocenos -->
 	<section id="about" class="container waypoint">
+		
 		<div class="inner">
-
-			<!-- Header -->
-			<h1 class="header light gray3 fancy"><span class="colored">Quienes </span>Somos</h1>
-
-			<!-- Description
-			<p class="h-desc gray4">lorem Ipsum is<span class="colored bold"> lorem Ipsum</span> of passages of Lorem Ipsum available, but the majority have suffered alteration.<br /><br /></p>
 			<hr>
+			<h1 class="header light gray3 fancy"><span class="colored">NUESTRA FILOSOFIA</span></h1>
+                <p class="h-desc gray4" style="text-align:justify;">Proporcionar un ambiente laboral excepcional en el cual nuestros colaboradores se sientan a gusto y en plenitud desempeñando la profesión que eligieron centrándose en la libertad y la pasión por el hacer, sin tener la preocupación financiera como motor principal de su función, creemos que el talento humano es lo mas importante, pues son las ideas de este, las que llevaran al mundo por un camino diferente y al rotundo éxito de nuestra visión como una familia empresarial.</p>
+            <br />
+			<h1 class="header light gray3 fancy"><span class="colored">NUESTRA MISIÓN</span></h1>
+			    <p class="h-desc gray4" style="text-align:justify;">Prestar un óptimo servicio al cliente con un personal altamente capacitado en todas las áreas del deporte, rehabilitación, nutrición, fisioterapia, que permitan a nuestros usuarios obtener logros y resultados de manera rápida sin poner en riesgo su salud.</p>
+			<br />
+			<h1 class="header light gray3 fancy"><span class="colored">NUESTRA VISIÓN</span></h1>
+			    <p class="h-desc gray4" style="text-align:justify;">Convertirnos en la empresa más reconocida a nivel nacional en la prestación de servicios de Entrenamiento Personal a Domicilio para todo tipo de poblaciones desde niños, hasta adultos mayores ó deportistas de alto rendimiento, conformada única y exclusivamente por tecnólogos ó profesionales especialistas en actividad física ó ciencias a fines con el deporte la nutrición y la salud.</p>
+			<hr>
+		</div>
+	</section>
 
-			<!-- Boxes
-			<div class="boxes">
+	<!-- Planes y servicios -->
+	<section id="PlanesServicios" class="container">
 
-
-				<div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="100">
-				<p class="lead">Pressure check up</p>
-				<hr><br>
-					<a class="about-icon">
-						<i class="fa fa-stethoscope"></i>
-					</a>
-					<br><br>
-					<p class="light about-text">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority.</p>
-				</div>
-
-
-				<div class="col-xs-3 col-sm-6 col-md-3 about-box animated" data-animation="fadeIn" data-animation-delay="300">
-				<p class="lead">Max. gym equipments</p>
-				<hr><br>
-					<a class="about-icon">
-						<i class="fa fa-wheelchair"></i>
-					</a>
-					<br><br>
-					<p class="light about-text">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority.</p>
-				</div>
-
-
-				<div class="col-xs-12 col-md-6 col-sm-12 about-box animated" data-animation="fadeIn" data-animation-delay="700">
-				<p class="lead lead-text">Best in the city</p><hr>
-					<p class="left pro-bars" style="color: rgb(83, 205, 181);">Treadmill </p>
-					<div class="pro-bar-container color-green-sea">
-						<div class="pro-bar bar-100 color-turquoise" data-pro-bar-percent="100">
-							<div class="pro-bar-candy candy-ltr"></div>
-						</div>
-					</div>
-					<p class="left pro-bars" style="color: #3498DB;">Spinning </p>
-					<div class="pro-bar-container color-belize-hole">
-						<div class="pro-bar bar-80 color-peter-river" data-pro-bar-percent="80" data-pro-bar-delay="200">
-							<div class="pro-bar-candy candy-ltr"></div>
-						</div>
-					</div>
-					<p class="left pro-bars" style="color: #B483C8;">Cardio </p>
-					<div class="pro-bar-container color-wisteria">
-						<div class="pro-bar bar-70 color-amethyst" data-pro-bar-percent="70" data-pro-bar-delay="300">
-							<div class="pro-bar-candy candy-ltr"></div>
-						</div>
-					</div>
-				</div>
-			</div><!-- End Boxes -->
-		</div><!-- End About Inner -->
-	</section><!-- End About Section -->
-
-	<!-- Features -->
-	<section id="features" class="container">
-
-		<div class="inner">
-
-			<!-- Header
-			<h1 class="header light gray1">Features of <span class="colored fancy">Fitness!</span></h1>
-
-			<!-- Description
-			<p class="h-desc white bold">lorem Ipsum is<span class="colored bold"> lorem Ipsum</span> lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum. lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum is simple.</p>
-
-			<div class="features-boxes">
-
-				<!-- Box 1
-				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="0">
-					<!-- Icon
-					<a class="f-icon">
-						<i class="fa fa-eye"></i>
-					</a>
-					<!-- Header
-					<p class="feature-head">Retina Ready</p>
-					<!-- Text
-					<p class="feature-text ">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-				</div>
-
-
-				<!-- Box 2
-				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="100">
-					<!-- Icon -->
-					<a class="f-icon">
-						<i class="fa fa-tablet"></i>
-					</a>
-					<!-- Header
-					<p class="feature-head">Responsive Framework</p>
-					<!-- Text
-					<p class="feature-text ">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-				</div>
-
-
-				<!-- Box 3
-				<div class="col-xs-4 f-box animated" data-animation="fadeIn" data-animation-delay="200">
-					<!-- Icon
-					<a class="f-icon">
-						<i class="fa fa-flask"></i>
-					</a>
-					<!-- Header
-					<p class="feature-head">Parallax Design</p>
-					<!-- Text
-					<p class="feature-text light">lorem Ipsum is lorem Ipsum of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-				</div>
-				<div class="clear"></div>
-
-			</div><!-- End Features Boxes -->
-
-		</div> <!-- End Features Inner -->
-
-	</section><!-- End Features Section -->
-
-	<!-- Clients -->
-	<section id="clients" class="container">
-
-		<!-- Team Inner -->
 		<div class="inner team">
+			<h1 class="header light gray3 fancy"><span class="colored">PLANES</span></h1>
+			<p class="h-desc gray4"> Detalle o descripcion de los planes.</p>
 
-			<!-- Header -->
-			<h1 class="header light gray3 fancy"><span class="colored">Nuestras </span> Tendencias</h1>
-
-			<!-- Description -->
-			<!--<p class="h-desc gray4">lorem Ipsum is<span class="colored bold">  lorem Ipsum</span> lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum. lorem Ipsum is simply dummy text of the printing and typesetting industry loremipsum is simple.</p>
-
-
-			<!-- Members -->
 			<div class="team-members inner-details">
-
-				<!-- Member -->
+			
 				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
 					<div class="member-inner">
-						<!-- Team Member Image -->
 						<a class="team-image">
-							<!-- Img -->
-							<img src="images/clients/9.jpg" alt="" />
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
 						</a>
 						<div class="member-details">
-							<div class="member-details-inner">
-								<!-- Name
-								<h2 class="member-name light">Lorem ipsum dolor</h2>
-								<!-- Description
-								<p class="member-description">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-								<!-- Socials -->
-								<div class="socials">
-									<!-- Link -->
-									<a href="#"><i class="fa fa-link"></i></a>
-								</div><!-- End Socials -->
-							</div> <!-- End Detail Inner -->
-						</div><!-- End Details -->
-					</div> <!-- End Member Inner -->
-				</div><!-- End Member -->
-
-
-				<!-- Member
-				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="100">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PLAN PERSONAL</h2>								
+								<p class="member-description">Detalle PLAN PERSONAL.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
 					<div class="member-inner">
-						<!-- Team Member Image
 						<a class="team-image">
-							<!-- Img
-							<img src="images/clients/2.jpg" alt="" />
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
 						</a>
 						<div class="member-details">
-							<div class="member-details-inner">
-								<!-- Name
-								<h2 class="member-name light">Lorem ipsum dolor</h2>
-								<!-- Description
-								<p class="member-description">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-								<!-- Socials
-								<div class="socials">
-									<!-- Image
-									<a href="#"><i class="fa fa-camera"></i></a>
-								</div><!-- End Socials
-							</div> <!-- End Detail Inner
-						</div><!-- End Details
-					</div> <!-- End Member Inner
-				</div><!-- End Member -->
-
-
-				<!-- Member
-				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="200">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PLAN SEMI GRUPAL</h2>								
+								<p class="member-description">Detalle PLAN SEMI GRUPAL.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div> 
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
 					<div class="member-inner">
-						<!-- Team Member Image
 						<a class="team-image">
-							<!-- Img
-							<img src="images/clients/3.jpg" alt="" />
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
 						</a>
 						<div class="member-details">
-							<div class="member-details-inner">
-								<!-- Name
-								<h2 class="member-name light">Lorem ipsum dolor</h2>
-								<!-- Description
-								<p class="member-description">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
-								<!-- Socials
-								<div class="socials">
-									<!-- Link
-									<a href="#"><i class="fa fa-link"></i></a>
-								</div><!-- End Socials
-							</div> <!-- End Detail Inner
-						</div><!-- End Details
-					</div> <!-- End Member Inner
-				</div><!-- End Member
-			</div><!-- End Members -->
-		</div><!-- End Team Inner -->
-	</section><!-- End Team Section -->
-
-
-
-
-	<!-- Testimonials -->
-	<section id="testimonial" class="testimonials parallax2">
-
-		<div class="inner">
-
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			    	<ul>
-				     <li class="monial">
-						<!-- Text
-						<h1 class="condensed white">"<span class="colored">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Cras euismod vestibulum orci, mollis vulpute felis dapibus sed. Nam ullamcorper congue elit."</h1>
-						<!-- Name
-						<p class="light">John Doe</p>
-					</li>
-					</ul>
-			    </div>
-			    <div class="item">
-			      <ul>
-			      <li class="monial">
-						<!-- Text 
-						<h1 class="condensed white"><span class="colored">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Cras euismod vestibulum orci, mollis vulputate felis dapibus sed. Nam ullamcorper congue elit."</h1>
-						<!-- Name
-						<p class="light">Jane Doe</p>
-					</li>
-				</ul>
-			    </div>
-			    <div class="item">
-			    <ul>
-			      <li class="monial">
-						<!-- Text
-						<h1 class="condensed white">"<span class="colored">Lorem ipsum dolor</span> sit amet, consectetur adipiscing elit. Cras euismod vestibulum orci, mollis vulputate felis dapibus sed. Nam ullamcorper congue elit."</h1>
-						<!-- Name
-						<p class="light">Severe Dane</p>-->
-					</li>
-				</ul>
-			    </div>
-			  </div>
-
-
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PLAN SEMI GRUPAL</h2>								
+								<p class="member-description">Detalle PLAN SEMI GRUPAL.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PAUSAS LABORALES</h2>								
+								<p class="member-description">Detalle PAUSAS LABORALES.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">NUTRICION & DIETETICA</h2>								
+								<p class="member-description">Detalle NUTRICION & DIETETICA.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">ANALISIS MEDICOS</h2>								
+								<p class="member-description">Detalle ANALISIS MEDICOS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">TERAPIAS FLORALES</h2>								
+								<p class="member-description">Detalle TERAPIAS FLORALES.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/3.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">OUTSOURCING</h2>								
+								<p class="member-description">Detalle OUTSOURCING.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/1.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PENDIENTE</h2>								
+								<p class="member-description">PENDIENTE.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>				  
+								
 			</div>
+		</div>
+		
+	</section>
 
-					</div><!-- End Inner Div -->
+	<!-- Tendencias -->
+	<section id="Tendencias" class="container">
 
-	</section><!-- End Testimonials Section -->
+		<div class="inner team">
+			<h1 class="header light gray3 fancy"><span class="colored">Tendencias</span></h1>
+			<p class="h-desc gray4"> Detalle o descripcion de las tendencias.</p>
 
-
-	<!-- Contact Section -->
-	<section id="contact" class="container parallax4">
-		<!-- Contact Inner -->
-		<div class="inner contact">
-
-			<!-- Form Area -->
-			<div class="contact-form">
-
-            	<h4 class="header light gray3 fancy"><span class="colored" style="text-shadow: 0 5px 4px rgba(0, 0, 0, 0.14);">Contactenos</span></h4>
-                <p class="h-desc white"><img src="images/whatsapp.png" alt=""> <span class="bold" style="text-shadow: 0 3px 4px rgba(0, 0, 0, 0.34);">+57 314 340 29 50</span></p>
-				<!-- Form -->
-				<form id="contact-us" method="post" action="#">
-					<!-- Left Inputs -->
-					<div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
-						<!-- Name -->
-						<input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
-						<!-- Email -->
-						<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
-						<!-- Subject -->
-						<input type="text" name="subject" id="subject" required="required" class="form" placeholder="Telefono" />
-					</div><!-- End Left Inputs -->
-					<!-- Right Inputs -->
-					<div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="400">
-						<!-- Message -->
-						<textarea name="message" id="message" class="form textarea"  placeholder="Comentarios"></textarea>
-					</div><!-- End Right Inputs -->
-					<!-- Bottom Submit -->
-					<div class="relative fullwidth col-xs-12">
-						<!-- Send Button -->
-						<button type="submit" id="submit" name="submit" class="btn btn-success size-boton">Enviar</button>
-					</div><!-- End Bottom Submit -->
-					<!-- Clear -->
-					<div class="clear"></div>
-				</form>
-
-				<!-- Your Mail Message -->
-				<div class="mail-message-area">
-					<!-- Message -->
-					<div class="alert gray-bg mail-message not-visible-message">
-						<strong>Thank You !</strong> Your email has been delivered.
+			<div class="team-members inner-details">
+			
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/SUSPENSION_TRX.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PAUSAS LABORALES</h2>								
+								<p class="member-description">El entrenamiento en SUSPENSION / TRX.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
 					</div>
 				</div>
 
-			</div><!-- End Contact Form Area -->
-		</div><!-- End Inner -->
-	</section><!-- End Contact Section -->
+                <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/BASES%20INESTABLES.jpeg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">BASES INESTABLES</h2>								
+								<p class="member-description">El entrenamiento en BASES INESTABLES.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>       
+        
+                <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/PESAS%20RUSAS.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PESAS RUSAS</h2>								
+								<p class="member-description">El entrenamiento en PESAS RUSAS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+       
+               <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/CROSSFIT.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">CROSSFIT</h2>								
+								<p class="member-description">El entrenamiento en CROSSFIT.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+       
+               <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/KICK%20BOXING.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">KICK BOXING</h2>								
+								<p class="member-description">El entrenamiento en KICK BOXING.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+       
+                <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/THERA%20BAND.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">THERA BAND</h2>								
+								<p class="member-description">El entrenamiento en THERA BAND.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+       
+                <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/GERONTOGIMNASIA.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">GERONTO GIMNASIA</h2>								
+								<p class="member-description">El entrenamiento en GERONTO GIMNASIA.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+       
+               <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/Tendencias/PRENATAL.jpg" alt="" width="100" height="250" />
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PRE NATAL</h2>								
+								<p class="member-description">El entrenamiento PRE NATAL .</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>    
+        
+                <div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/1.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PENDIENTE</h2>								
+								<p class="member-description">PENDIENTE.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>	
+        
+			</div>
+		</div>
+	</section>
 
+	<!-- Noticias Fit -->
+	<section id="testimonial" class="testimonials parallax2">
+	
+		<div class="inner">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <ul>
+                         <li class="monial">
+                            <h1 class="condensed white"><span class="colored">Titulo Noticias 1:</span> "Detalle de noticia número 1."</h1>	
+                            <p class="light">Juan Nn</p>
+                        </li>
+                        </ul>
+                     </div>
+                     <div class="item">
+                         <ul>
+                         <li class="monial">
+                            <h1 class="condensed white"><span class="colored">Titulo Noticias 2:</span> "Detalle de noticia número 2."</h1>	
+                            <p class="light">Juan Nn</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="item">
+                         <ul>
+                         <li class="monial">
+                            <h1 class="condensed white"><span class="colored">Titulo Noticias 3:</span> "Detalle de noticia número 3."</h1>	
+                            <p class="light">Juan Nn</p>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+			</div>
+        </div>
+        
+	</section>
 
+    <!-- Galeria -->
+    <section id="galeria" class="container">
+        
+        <div class="inner team">
+            <div class="row">
+              <div class="col-xs-6 col-md-3">
+               
+                <a href="#" class="thumbnail"><img src="images/Home/1.jpg" alt="..."></a>
+                
+                Pendiente por hacer una galeria de imagenes y videos            
+                
+              </div>
+            </div>
+        </div>
+        
+    </section>
+   
+    <!-- Suplementos y accesorios -->
+    <section id="supelementos" class="container">
 
-	<!-- Site Socials and Address -->
-	<section id="site-socials" class="no-padding white-bg">
-		<div class="site-socials inner no-padding">
-			<!-- Socials -->
+		<div class="inner team">
+			<h1 class="header light gray3 fancy"><span class="colored">SUPLEMENTOS Y ACCESORIOS</span></h1>
+			<p class="h-desc gray4"> Detalle o descripcion de los planes.</p>
 
-		</div><!-- End Inner -->
-	</section><!-- End Site Socials and Address -->
+			<div class="team-members inner-details">
+			
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">HIPER CALORICOS</h2>								
+								<p class="member-description">Detalle HIPER CALORICOS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">HIPO CALORICOS</h2>								
+								<p class="member-description">Detalle HIPO CALORICOS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div> 
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">CERO CARBOHIDRATOS</h2>								
+								<p class="member-description">Detalle CERO CARBOHIDRATOS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">QUEMADORES</h2>								
+								<p class="member-description">Detalle QUEMADORES.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">ENERGIA & RECUPERACION</h2>								
+								<p class="member-description">Detalle ENERGIA & RECUPERACION.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">LINEA NATURISTA</h2>								
+								<p class="member-description">Detalle LINEA NATURISTA.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">GELES REDUCTORES</h2>								
+								<p class="member-description">Detalle GELES REDUCTORES.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/4.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">ACCESORIOS FITNESS</h2>								
+								<p class="member-description">Detalle ACCESORIOS FITNESS.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 member animated" data-animation="fadeInUp" data-animation-delay="0">
+					<div class="member-inner">
+						<a class="team-image">
+							<img src="images/1.jpg" alt="" width="100" height="250"/>
+						</a>
+						<div class="member-details">
+							<div class="member-details-inner">								
+								<h2 class="member-name light">PENDIENTE</h2>								
+								<p class="member-description">PENDIENTE.</p>								
+								<div class="socials">		
+															
+									<!--Modal con la informacion que debe ir-->
+									
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>				  
+								
+			</div>
+		</div>
+		
+	</section>
+   
+    <!-- Contactenos -->
+	<section id="contact" class="container parallax4">
+		<div class="inner contact">
+			<div class="contact-form">
+            	<h4 class="header light gray3 fancy"><span class="colored" style="text-shadow: 0 5px 4px rgba(0, 0, 0, 0.14);">Contactenos</span></h4>
+                <p class="h-desc white"><img src="images/whatsapp.png" alt=""> <span class="bold" style="text-shadow: 0 3px 4px rgba(0, 0, 0, 0.34);">+57 314 340 29 50</span></p>
+				<form id="contact-us" method="post" action="#">
+					<div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+						<input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
+						<input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+						<input type="text" name="subject" id="subject" required="required" class="form" placeholder="Telefono" />
+					</div>
+					<div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="400">
+						<textarea name="message" id="message" class="form textarea"  placeholder="Comentarios"></textarea>
+					</div>
+					<div class="relative fullwidth col-xs-12">
+						<button type="submit" id="submit" name="submit" class="btn btn-success size-boton">Enviar</button>
+					</div>
+					<div class="clear"></div>
+					<br />
+				</form>
 
+			</div>
+		</div>
+	</section>
 
-
-	<!-- Footer -->
+    <!-- Pie de pagina -->
 	<footer id="footer" class="footer">
-		<!-- Your Company Name -->
         <img src="images/Logo/200H.png" width="200" alt="Logo" style="margin-bottom: 15px"/>
 		  <div class="socials animated" data-animation="fadeInLeft" data-animation-delay="400">
-			  <!-- Facebook -->
 			  <a href="#" target="_blank" class="social margin-image">
 				  <i class="fa"><img src="images/facebook.png" alt=""></i>
 			  </a>
-			  <!-- Twitter -->
 			  <a href="#" target="_blank" class="social margin-image">
 				  <i class="fa"><img src="images/twitter.png" alt=""></i>
 			  </a>
-			  <!-- Instagram -->
 			  <a href="#" class="social margin-image">
 				  <i class="fa"><img src="images/instagram.png" alt=""></i>
 			  </a>
-			  <!-- Youtube -->
 			  <a href="#" target="_blank" class="social margin-image">
 				  <i class="fa"><img src="images/youtube.png" alt=""></i>
 			  </a>
 		  </div>
-		<!-- Copyright -->
 		<p class="copyright normal">© 2017 <span class="colored">Gym2You.</span> Todos los derechos reservados.</p>
-	</footer><!-- End Footer -->
+	</footer>
 
 	<!-- JS Files -->
-
-
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.appear.js"></script>
@@ -479,16 +796,18 @@
 
 	<script type="text/javascript" src="js/plugins.js"></script>
 
+    <script type="text/javascript">
+        $('.carousel').carousel()
+    </script>
+
 	<script>
 
-  $("a.about-icon").hover(function () {
-    $(this).children("i").addClass("fa-spin");
- }, function(){
- 	$(this).children("i").removeClass("fa-spin");
- });
-
-
-
+        $("a.about-icon").hover(function () {
+            $(this).children("i").addClass("fa-spin");
+        }, function(){
+            $(this).children("i").removeClass("fa-spin");
+        });
+        
 </body>
 
 </html>
