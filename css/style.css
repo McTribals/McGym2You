@@ -158,7 +158,6 @@
 		max-width: 1170px;
 		position: relative;
 		margin: 0 auto;
-		padding: 75px 0;
 		text-align: center;
 	}
 
@@ -884,8 +883,8 @@
 		}
 
 	.testimonials{
-		background: url(../images/parallax/2.jpg) center center fixed;
-		padding: 70px 0 70px;
+		background: url(../images/Home/Noticias.jpg) center center fixed;
+		padding: 150px 0 150px;
 		text-align: center;
 		overflow: hidden;
 		position: relative;
@@ -1027,7 +1026,7 @@
 		margin:0;
 		z-index: 3;
 		opacity:0.9;
-		background:#8BC3A3;
+		background:#574CEF;
 		-webkit-transition: all 0.4s;
 		-moz-transition: all 0.4s;
 		transition: all 0.4s;
@@ -1163,7 +1162,7 @@
 /* Contact */
 
 	#contact {
-		background: url(../images/6.jpg) fixed;
+		background: url(../images/Home/Contactenos.jpg) fixed;
 		padding: 10px 0 10px;
 		background-size: cover;
 	}
