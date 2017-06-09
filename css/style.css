@@ -1449,3 +1449,9 @@ input {
 .animation-color label {
   color: #28a2a2;
 }
+
+.modal-title{
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 200%;
+}
