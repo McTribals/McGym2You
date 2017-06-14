@@ -16,7 +16,7 @@
 
 /* Main Styles */
 	.pro-bars{
-		 font-family: "Lato";
+		font-family: 'Roboto Condensed', sans-serif;
 		font-weight: bold;
 		font-size: 20px;
 
@@ -32,7 +32,7 @@
 		padding:0;
 		margin-left:0;
 		margin-right:0;
-		font-family: Impact, Charcoal, sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 		-webkit-font-smoothing: antialiased;
 	}
 
@@ -59,7 +59,7 @@
 	
 	}
 	.lead{
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
@@ -98,19 +98,19 @@
 /* Font Classes */	
 
 	.condensed{
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 	h2.condensed{
 		font-size: 97px;
 	}
 
 	.fancy{
-		font-family: 'Great Vibes', cursive;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 
 
 	.letraGym{
-		font-family: Impact, Charcoal, sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
     
 
@@ -214,10 +214,11 @@
 	.header{
 		width:100%;
 		height: auto;
-		font-size:3.5em;
+		font-size:2.3em;
 		font-weight: 400;
 		text-align: center;
 		margin:0 auto;
+        background: #336c8e;
 	}
 
 	.h-desc{
@@ -623,7 +624,7 @@
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 		transition: all 0.3s;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 
 /* Nav Menu Rollovers */
@@ -1032,7 +1033,7 @@
 		margin:0;
 		z-index: 3;
 		opacity:0.9;
-		background:#2F53C2;
+		background:rgba(56, 118, 154, 0.54);
 		-webkit-transition: all 0.4s;
 		-moz-transition: all 0.4s;
 		transition: all 0.4s;
@@ -1399,3 +1400,15 @@
 	.footer p.copyright a:hover{
 		color:#8BC3A3;
 	}
+
+/* Galeria */
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
