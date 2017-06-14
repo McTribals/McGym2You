@@ -25,6 +25,9 @@
 15. Modal al ingresar al sitio con sesion de cortesia if( el usuario da click){desplegar un fomulario solicitando datos}else{cerrar modal}
 16. ventana flotante al lado derecho inferior recordadndo la sesion de cortesia
 17. Musica de fondo al ingresar a la pagina
+
+40. klasjdjsadjsa
+
 -->
 
 
@@ -41,7 +44,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<link rel="icon" type="image/png" href="images/Logo/favicon_16x16.png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/animate.min.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -51,6 +53,7 @@
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/player/YTPlayer.css" />
 	<link href="css/pro-bars.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 </head>
 
@@ -142,13 +145,11 @@
 	</section>
 
 	<!-- Planes y servicios -->
-	<section id="PlanesServicios" class="container">
+	<section id="PlanesServicios" class="container" style="background: #666666;">
 
 		<div class="inner team">
 
-		<hr>
-
-			<h1 class="header light letraGym"><span class="naranjaGym">PLANES</span></h1>
+			<h1 class="header light letraGym" style="margin-top: 30px; font-weight: 700; text-shadow: 0px 3px 2px grey;"><span class="naranjaGym">PLANES</span></h1>
 
 			<div class="team-members inner-details">
 
@@ -160,9 +161,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="planPersonal" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">PLAN PERSONAL</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -177,9 +178,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="planSemiPersonal" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">PLAN SEMI PERSONAL</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -194,9 +195,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="planSemiGrupal" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">PLAN SEMI GRUPAL</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -211,16 +212,16 @@
 						</a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="pausasLaborales" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">PAUSAS LABORALES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
 					</div>
 				</div>
 
-				<div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+				<div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0" >
 					<div class="member-inner">
 
 						<a class="team-image">
@@ -228,9 +229,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="nutricionYDietetica" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">NUTRICION Y DIETETICA</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -245,9 +246,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="analisisMedicos" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">ANALISIS MEDICOS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -262,9 +263,9 @@
 				        </a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="terapiasFlorales" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">TERAPIAS FLORALES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -279,9 +280,9 @@
 						</a>
 
 						<div class="member-details">
-							<div class="member-details-inner" onclick="fnPlan();" style="cursor:pointer">
+							<div id="outsourcing" class="member-details-inner" onclick="showModalPlans(this)" style="cursor:pointer">
 								<h2 class="member-name light">OUTSOURCING</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -314,7 +315,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">PAUSAS LABORALES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -331,7 +332,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">BASES INESTABLES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -348,7 +349,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">PESAS RUSAS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -365,7 +366,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">CROSSFIT</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -382,7 +383,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">KICK BOXING</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -399,7 +400,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">THERA BAND</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -416,7 +417,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">GERONTO GIMNASIA</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -433,7 +434,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnTendencias(this);" style="cursor:pointer">
 								<h2 class="member-name light">PRE NATAL</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -594,7 +595,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">HIPER CALORICOS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -611,7 +612,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">HIPO CALORICOS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -628,7 +629,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">CERO CARBOHIDRATOS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -645,7 +646,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">QUEMADORES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -662,7 +663,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">ENERGIA y RECUPERACION</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -679,7 +680,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">LINEA NATURISTA</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -696,7 +697,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">GELES REDUCTORES</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -713,7 +714,7 @@
 						<div class="member-details">
 							<div class="member-details-inner" onclick="fnSuplementos(this);" style="cursor:pointer">
 								<h2 class="member-name light">ACCESORIOS FITNESS</h2>
-								<img src="images/Logo/look24.png" alt=""/>
+								<img src="images/Logo/View.png" alt=""/>
 							</div>
 						</div>
 
@@ -780,45 +781,63 @@
 	</footer>
 
     <!-- Modal -->
-    <button id="btnModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="display:none;">Large modal</button>
+    <button id="btnMainModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="display:none;"></button>
 
-    <div class="modal fade bs-example-modal-lg" tabindex="<-1></-1>" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 id="tlModal" class="modal-title" id="gridSystemModalLabel">Titulo</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <a class="team-image"><img class="img-rounded" src="images/Planes/PLAN%20PERSONAL.png" alt="" width="250" height="<30></30>0"/></a>
-                            </div>
-                            <div class="col-md-8 text-justify">
-                                <p>Este plan de entrenamiento esta dirigido a tres ó cuatro personas máximo; se compone de una sesión de 55 minutos de actividad física dirigida por un entrenador titulado y aptamente capacitado, en la cual se realiza una fase de calentamiento, activación articular, ejecución y estiramiento, con el fin de evitar lesiones ó molestias posteriores al entrenamiento.
+	 <div id="app">
+		 <div id="mainModal" class="modal fade bs-example-modal-lg" tabindex="<-1></-1>" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						 <div class="modal-header modal-header-main">
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							  <h4 id="tlModal" class="modal-title text-center font-title">
+								  <!--Titulo Planes-->
+							  </h4>
+						 </div>
+						 <div class="modal-body">
+							  <div class="container-fluid">
+									<div class="row">
+										 <div class="col-md-4" id="image-modal">
+											  <!--Imagenes Planes-->
+										 </div>
+										 <div class="col-md-8 text-justify" id="content-modal">
+											<!--Texto Planes-->
+										 </div>
+									</div>
+							  </div>
+						 </div>
+						 <div class="modal-footer modal-footer-main" id="footer-modal">
+							<button id="componentes" type="button" class="btn btn-primary" v-if="mostrarComponentes" onclick="showModalComponents(this)">Componentes del plan</button>
+							<button id="beneficios" type="button" class="btn btn-primary" v-if="mostrarBoton"  onclick="showModalComponents(this)">Beneficios del plan</button>
+							<button id="paquetes" type="button" class="btn btn-primary" v-if="mostrarPaquetes"  onclick="showModalComponents(this)">Paquetes del plan</button>
+						</div>
+					</div>
+			  </div>
+		 </div>
+	 </div>
 
-COMPONENTES DEL PLAN
 
--	Creación de ficha clínica deportiva. ( Anamnesis )
--	Toma de mediciones corporales. ( Antropometría )
--	Registro fotográfico para estudio comparativo.
--	Valoración postural para identificación de patologías.
--	Programa de adaptación para todo tipo de población.
--	Plan de entrenamiento individualizado según objetivos.
--	Programa de orientación nutricional y tips generales.
--	Toma de cargas maximales. ( Casos específicos )
--	Entrenador Personal TITULADO con amplia experiencia.
--	Firma de contrato de servicios para garantía del usuario.
--	Servicio a domicilio en casa, oficina, parque o GYM del conjunto.
--	Entrega de resultados en PDF vía E Mail al usuario.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+	 <button id="componentModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-medium" style="display:none;"></button>
+
+
+<div class="modal fade bs-modal-medium" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header modal-header-comp">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="showModalMain()"><span aria-hidden="true">&times;</span></button>
+        <h4  id="tlModalComp"  class="modal-title text-center font-title" style="color: #132732;">
+
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="row" >
+			  <p id="content-components"></p>
         </div>
-    </div>
+      <div class="modal-footer modal-footer-comp">
+        <button type="button" class="btn btn-primary boton" data-dismiss="modal" onclick="showModalMain()">Cerrar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 	<!-- JS Files -->
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
@@ -833,18 +852,15 @@ COMPONENTES DEL PLAN
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-
 	<script type="text/javascript" src="js/plugins.js"></script>
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
 
     <script type="text/javascript">
         $('.carousel').carousel({
             interval: 3000
         })
-
-        function fnPlan()
-        {
-            document.getElementById("btnModal").click();
-        }
 
     </script>
 

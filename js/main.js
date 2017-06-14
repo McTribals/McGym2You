@@ -1,4 +1,41 @@
+let app = new Vue({
+   el: '#app',
+   data:{
+      mostrarBoton: false,
+      mostrarComponentes: false,
+      mostrarPaquetes: false
+   },
+   methods: {
+      mostrar(){
+         this.mostrarBoton = true;
+         this.mostrarPaquetes = false;
+      },
+      esconder(){
+         this.mostrarBoton = false;
+         this.mostrarPaquetes = false;
+      },
+      mostrarCompo(){
+         this.mostrarComponentes = true;
+         this.mostrarPaquetes = false;
+      },
+      mostrarPaque(){
+         this.mostrarPaquetes = true;
+         this.mostrarBoton = false;
+         this.mostrarComponentes = false;
+      },
+      remover(){
+         this.mostrarPaquetes = false;
+         this.mostrarBoton = false;
+         this.mostrarComponentes = false;
+      }
+   }
+})
 
+const componentes = 'COMPONENTES';
+const beneficios = 'BENEFICIOS';
+const paquetes = 'PAQUETES';
+
+/*PLANES*/
 /*Titles PLans*/
 const planPersonal = 'PLAN PERSONAL';
 const planSemiPersonal = 'PLAN SEMI PERSONAL';
@@ -29,27 +66,72 @@ const analisisMedicosText = `Mediante nuestro convenio institucional con la reco
 
 Nuestro objetivo es utilizar todos los medios científicos existentes para garantizar un resultado eficaz y seguro en nuestros clientes, ya que consideramos vital el uso de la ciencia en procesos de nutrición, fisiología y análisis para asegurar el cumplimiento de los objetivos solicitados.`;
 const terapiasFloralesText =`Desde hace algunos años, múltiples estudios científicos han evidenciado los grandes beneficios obtenidos en el ser humano a través de las esencias florales y sus terapias, incrementado notablemente la salud y el desempeño físico en el deportista junto con un balance optimo en la parte emocional y psicológica lo cual influye en el buen desempeño del mismo y en su armoniosa interacción con el medio social.`;
-const outsourcingText = '';
+const outsourcingText = 'Necesitas organizar un evento deportivo, administrar ungimnasio ó zona deportiva, no cuentas con el personal requerido o calificado paradichas actividades, nosotros te proporcionamos personal altamente calificado bajo la modalidad de outsourcing para satisfacer las necesidades requeridas por nuestros usuarios.';
+
+/*Components*/
+const componentePlanes = `- Creación de ficha clínica deportiva. ( Anamnesis ) <br/>
+                           -	Toma de mediciones corporales. ( Antropometría )<br/>
+                           -	Registro fotográfico para estudio comparativo.<br/>
+                           -	Valoración postural para identificación de patologías.<br/>
+                           -	Programa de adaptación para todo tipo de población.<br/>
+                           -	Plan de entrenamiento individualizado según objetivos.<br/>
+                           -	Programa de orientación nutricional y tips generales.<br/>
+                           -	Toma de cargas maximales. ( Casos específicos )<br/>
+                           -	Entrenador Personal TITULADO con amplia experiencia.<br/>
+                           -	Firma de contrato de servicios para garantía del usuario.<br/>
+                           -	Servicio a domicilio en casa, oficina, parque o GYM del conjunto.`;
+const componenteLaboral = `-	Presentación y proceso motivacional. <br/>
+                           -	Calentamiento general. <br/>
+                           -	Calentamiento especifico. <br/>
+                           -	Activación articular. <br/>
+                           -	Ejecución de ejercicios específicos. <br/>
+                           -	Actividad de integración laboral.`;
+const beneficioLaboral = ` -	Reducción del estrés en los trabajadores. <br/>
+                           -	Mejora el desempeño a nivel laboral. <br/>
+                           -	Disminución de riesgo de enfermedades profesionales. <br/>
+                           -	Motiva y mejora las relaciones interpersonales. <br/>
+                           -	Incita al trabajo en equipo a través de actividades lúdicas. <br/>
+                           -	Promueve las buenas posturas corporales. <br/>
+                           -	Favorece la autoestima y aumenta la concentración.`;
+const paquetesNutricion = `-	Nutrición Estándar <br/>
+                           -	Nutrición Optima <br/>
+                           -	Nutrición Premium <br/>
+                           -	VIP Smart Pack`;
+/*/PLANES*/
+
+let mostrarBotonBeneficio = false;
 
 
 function showModalPlans(element){
-
+   console.log('Entro en metodo ' + element);
       let idElement = element.id;
       if(idElement == 'planPersonal'){
+         app.mostrarCompo();
+         app.esconder();
          displayModal(idElement, planPersonal, planPersonalImage, planPersonalText);
       }else if(idElement == 'planSemiPersonal'){
+         app.mostrarCompo();
+         app.esconder();
          displayModal(idElement, planSemiPersonal, planSemiPersonalImage, planSemiPersonalText);
       }else if(idElement == 'planSemiGrupal'){
+         app.mostrarCompo();
+         app.esconder();
          displayModal(idElement, planSemiGrupal, planSemiGrupalImage, planSemiGrupalText);
       }else if(idElement == 'pausasLaborales'){
+         app.mostrarCompo();
+         app.mostrar();
          displayModal(idElement, pausasLaborales, pausasLaboralesImage, pausasLaboralesText);
       }else if(idElement == 'nutricionYDietetica'){
+         app.mostrarPaque();
          displayModal(idElement, nutricionYDietetica, nutricionYDieteticaImage, nutricionYDieteticaText);
       }else if(idElement == 'analisisMedicos'){
+         app.remover();
          displayModal(idElement, analisisMedicos, analisisMedicosImage, analisisMedicosText);
       }else if(idElement == 'terapiasFlorales'){
+         app.remover();
          displayModal(idElement, terapiasFlorales, terapiasFloralesImage, terapiasFloralesText);
       }else{
+         app.remover();
          displayModal(idElement, outsourcing, outsourcingImage, outsourcingText);
       }
 }
@@ -60,27 +142,31 @@ function displayModal(id, plan, image, text){
    let newId = id + 'Comp';
    $('#mainModal .modal-content').attr("id", newId);
    $('#mainModal .modal-header #tlModal').text(plan);
-   $('#mainModal .modal-body #image-modal').html("<a class='team-image'><img class='img-rounded' src='"+image+"' width='250' height=''<30></30>0'/></a>");
+   $('#mainModal .modal-body #image-modal').html("<a class='team-image'><img class='img-rounded' src='"+image+"' width='100%' height='200px'/></a>");
    $('#mainModal .modal-body #content-modal').html(`<p>${text}</p>`);
+
+   console.log('CAMBIO A ' + mostrarBotonBeneficio);
    //populatePre('Holamama.txt');
 
    $('#btnMainModal').click();
 }
 
 function showModalComponents(element){
-
+   console.log('Entro en metodo ' + element);
    let idParent = $(element).parent().parent().attr('id');
+   let id = element.id;
+   console.log(id);
    console.log(idParent);
    if(idParent == 'planPersonalComp'){
-      displayModalComponent();
+      displayModalComponent(componentes,componentePlanes);
    }else if(idParent == 'planSemiPersonalComp'){
-      displayModalComponent();
+      displayModalComponent(componentes,componentePlanes);
    }else if(idParent == 'planSemiGrupalComp'){
-      displayModalComponent();
+      displayModalComponent(componentes,componentePlanes);
    }else if(idParent == 'pausasLaboralesComp'){
-      displayModalComponent();
+      displayModalComponent(componentes, componenteLaboral, beneficios, beneficioLaboral, id);
    }else if(idParent == 'nutricionYDieteticaComp'){
-      displayModalComponent();
+      displayModalComponent(paquetes, paquetesNutricion);
    }else if(idParent == 'analisisMedicosComp'){
       displayModalComponent();
    }else if(idParent == 'terapiasFloralesComp'){
@@ -90,29 +176,29 @@ function showModalComponents(element){
    }
 }
 
-function displayModalComponent(){
+function displayModalComponent(titleComp, component, titleBenefi, beneficio, id){
+   if(titleBenefi === null && beneficio === null){
+      $('.bs-modal-medium .modal-header #tlModalComp').text(titleComp);
+      $('.bs-modal-medium .modal-body #content-components').html(component);
+      $('#componentModal').click();
+   }else{
+      if(id == 'beneficios'){
+         $('.bs-modal-medium .modal-header #tlModalComp').text(titleBenefi);
+         $('.bs-modal-medium .modal-body #content-components').html(beneficio);
+         $('#componentModal').click();
+      }else if(id == 'paquetes'){
+         $('.bs-modal-medium .modal-header #tlModalComp').text(titleComp);
+         $('.bs-modal-medium .modal-body #content-components').html(component);
+         $('#componentModal').click();
+      }else{
+         $('.bs-modal-medium .modal-header #tlModalComp').text(titleComp);
+         $('.bs-modal-medium .modal-body #content-components').html(component);
+         $('#componentModal').click();
+      }
+   }
 
-   document.getElementById('content-components').innerHTML = "<ul><li>☻Creación de ficha clínica deportiva. ( Anamnesis )</li><li>Toma de mediciones corporales. ( Antropometría )</li><li>Registro fotográfico para estudio comparativo.</li></ul>";
 
 
-      $('.bs-modal-medium .modal-body #content-components').html(`
-         <ol>
-            <li>>↓↑☺↨►:1:9;►↓♥→►☺‼10/↓►→♥CY_^[\>  6♣Ä666666█6█Ä↨"b‼Ä6◘43   Creación de ficha clínica deportiva. ( Anamnesis )</li>
-            <li>Toma de mediciones corporales. ( Antropometría )</li>
-            <li>Registro fotográfico para estudio comparativo.</li>
-            <li>Valoración postural para identificación de patologías.</li>
-            <li>Programa de adaptación para todo tipo de población.</li>
-            <li>Plan de entrenamiento individualizado según objetivos.</li>
-            <li>Programa de orientación nutricional y tips generales.</li>
-            <li>Toma de cargas maximales. ( Casos específicos )</li>
-            <li>Entrenador Personal TITULADO con amplia experiencia.</li>
-            <li>Firma de contrato de servicios para garantía del usuario.</li>
-            <li>Servicio a domicilio en casa, oficina, parque o GYM del conjunto.</li>
-            <li>Entrega de resultados en PDF vía E Mail al usuario.</li>
-         </ol>
-         `);
-
-   $('#componentModal').click();
    $('#mainModal').css("display", "none");
    $('#mainModal').attr("aria-hideen", "true");
    $('#mainModal').removeClass('in');
@@ -125,6 +211,11 @@ function showModalMain(){
    $('#mainModal').attr("aria-hideen", "false");
    $('#mainModal').addClass('in');
 }
+
+console.log('ANTES DE ENTRAR ' + mostrarBotonBeneficio);
+
+
+
 
 /*Read File But With a Server*/
 /*function populatePre(url) {
