@@ -53,8 +53,8 @@ and (max-device-width : 568px) {
 		font-size: 1em !important;
 	}
 	.div-floating{
-      height: 28% !important;
-		width: 8% !important;
+        height: 28% !important;
+        width: 8% !important;
 	}
 	.modal-size {
     	width: 93% !important;
