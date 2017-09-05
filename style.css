@@ -1699,16 +1699,15 @@ p{
 
 .div-floating{
 	height: 10%;
-	width: 30%;
+	width: 16%;
 	background: #506c92;
 	z-index: 1000;
-	right: 0;
+	right: 33px;
 	position: fixed;
-	top: 12%;
+	top: 13%;
 	color: white;
 	cursor: pointer;
 	transition: all 1s;
-
 }
 .div-floating p{
 	font-family: Arial;
@@ -1733,7 +1732,7 @@ p{
 }
 
 .accesorios-p p:hover{
-	color: #4d9fd0;	
+	color: #4d9fd0;
 }
 
 @keyframes moveFloating {
