@@ -1,0 +1,947 @@
+<!--
+1. Animacion de la flecha.
+2. Elementos y detalle de los modales de los planes, Tendencias, Accesorio
+3. Noticias Ajustar tamaño de div
+4. imagenes de la misma dimencion
+5. Ajustar el formualrio Contacto
+6. Sescion de cortesia ajustar en movil.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>Gym2You</title>
+  <meta name="description" content="Entrenador en tu casa" />
+  <meta name="keywords" content="gimnasio, entrenador personal, entrenando en casa, entrenador en casa">
+  <meta name="author" content="Jefferson Andres Merchán Jiménez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="images/Logo/favicon_16x16.png" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/owl.carousel.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/player/YTPlayer.css" />
+  <link href="css/pro-bars.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Menu -->
+
+  <section id="navigation" class="dark-nav">
+    <div class="nav-inner">
+      <div class="site-logo">
+        <a href="#Inicio" id="logo-text" class="scroll logo">
+              <img src="images/Logo/100.png" class="img-responsive" alt="Responsive image">
+				</a>
+      </div>
+      <a class="mini-nav-button gray2"><i class="fa fa-bars"></i></a>
+      <div class="nav-menu">
+        <ul class="nav uppercase">
+
+          <li><a href="#Nosotros" class="scroll">Nosotros</a></li>
+          <li><a href="#Planes" class="scroll">Planes</a></li>
+          <li><a href="#Tendencias" class="scroll">Tendencias</a></li>
+          <li><a href="#Noticias" class="scroll">Noticias</a></li>
+          <li><a href="#Galeria" class="scroll">Galería</a></li>
+          <li><a href="#Accesorios" class="scroll">Accesorios</a></li>
+          <li><a href="#Contactenos" class="scroll">Contactenos</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ventana Flotante -->
+
+  <div class="div-floating" onclick="displayModalSesion();" style="border-radius: 10px;">
+    <p style="width:100%; text-align:center; font-size:18px;">SESIÓN DE CORTESÍA</p>
+  </div>
+
+  <!-- Inicio -->
+
+  <section id="Inicio" class="relative">
+
+    <div id="slides">
+      <div class="slides-container relative">
+        <div class="image5"></div>
+        <div class="image4"></div>
+        <div class="image3"></div>
+        <div class="image2"></div>
+        <div class="image6"></div>
+        <div class="image1"></div>
+      </div>
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+      </nav>
+    </div>
+
+    <!-- <div class="v2 absolute"> -->
+    <div>
+      <a href="#Nosotros" class="scroll">
+        <i class="arrow-down fa fa-3x fa-angle-double-down"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Nosotros -->
+
+  <section id="Nosotros" class="container-fluid">
+
+    <div class="inner">
+      <div class="main  row">
+        <div class="col-md-12">
+
+          <hr>
+
+          <h1 data-animation="fadeInUp" data-animation-delay="0" class="header light gray3 letraGym title-know-us animated"><span class="naranjaGym">NUESTRA FILOSOFIA</span></h1>
+          <p data-animation="fadeInUp" data-animation-delay="0" class="h-desc gray4 animated" style="text-align:justify;">Proporcionar un ambiente laboral excepcional en el cual nuestros colaboradores se sientan a gusto y en plenitud desempeñando la profesión que eligieron centrándose en la libertad y la pasión por el hacer, sin tener la preocupación financiera
+            como motor principal de su función, creemos que el talento humano es lo mas importante, pues son las ideas de este, las que llevaran al mundo por un camino diferente y al rotundo éxito de nuestra visión como una familia empresarial.</p>
+
+          <br />
+          <hr>
+          <h1 data-animation="fadeInUp" data-animation-delay="0" class="header light gray3 letraGym title-know-us animated"><span class="naranjaGym">NUESTRA MISIÓN</span></h1>
+          <p data-animation="fadeInUp" data-animation-delay="0" class="h-desc gray4 animated" style="text-align:justify;">Prestar un óptimo servicio al cliente con un personal altamente capacitado en todas las áreas del deporte, rehabilitación, nutrición, fisioterapia, que permitan a nuestros usuarios obtener logros y resultados de manera rápida sin poner en riesgo
+            su salud.</p>
+
+          <br />
+          <hr>
+
+          <h1 data-animation="fadeInUp" data-animation-delay="0" class="header light gray3 letraGym title-know-us animated"><span class="naranjaGym">NUESTRA VISIÓN</span></h1>
+          <p data-animation="fadeInUp" data-animation-delay="0" class="h-desc gray4 animated" style="text-align:justify;">Convertirnos en la empresa más reconocida a nivel nacional en la prestación de servicios de Entrenamiento Personal a Domicilio para todo tipo de poblaciones desde niños, hasta adultos mayores ó deportistas de alto rendimiento, conformada única
+            y exclusivamente por tecnólogos ó profesionales especialistas en actividad física ó ciencias a fines con el deporte la nutrición y la salud.</p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Planes -->
+
+  <section id="Planes" class="container image-paralax">
+
+    <div class="inner team">
+
+      <h1 class="header light subtitle-style"><span class="naranjaGym">PLANES</span></h1>
+
+      <div class="team-members inner-details">
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/PLAN%20PERSONAL.png" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="planPersonal" class="member-details" onclick="showModalPlans(this)">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PLAN PERSONAL</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/PLAN%20SEMI%20PERSONAL.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="planSemiPersonal" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PLAN SEMI PERSONAL</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/PLAN%20SEMI%20GRUPAL.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="planSemiGrupal" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PLAN SEMI GRUPAL</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/PAUSAS%20LABORALES.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="pausasLaborales" class="member-details" onclick="showModalPlans(this)">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PAUSAS LABORALES</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/NUTRICION%20&%20DIETETICA.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="nutricionYDietetica" class="member-details" onclick="showModalPlans(this)">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">NUTRICION Y DIETETICA</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/ANALISIS%20MEDICOS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="analisisMedicos" class="member-details" onclick="showModalPlans(this)">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">ANALISIS MEDICOS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/TERAPIAS%20FLORALES.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="terapiasFlorales" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">TERAPIAS FLORALES</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Planes/OUTSOURCING.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="outsourcing" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">OUTSOURCING</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Tendencias -->
+
+  <section id="Tendencias" class="container">
+
+    <div class="inner team">
+
+      <h1 class="header light subtitle-style"><span class="naranjaGym">TENDENCIAS</span></h1>
+
+      <div class="team-members inner-details">
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/SUSPENSION_TRX.jpg" alt="" width="100" height="250" class="img-rounded"/>
+				        </a>
+
+            <div id="suspension" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">SUSPENSION / TRX</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/BASES%20INESTABLES.jpeg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="basesInestables" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">BASES INESTABLES</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/PESAS%20RUSAS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="pesasRusas" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PESAS RUSAS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/CROSSFIT.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="crossfit" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">CROSSFIT</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/KICK%20BOXING.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="kickBoxing" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">KICK BOXING</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/THERA%20BAND.jpg" alt="" width="100" height="250"  class="img-rounded"/>
+						</a>
+
+            <div id="theraBand" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">THERA BAND</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/GERONTOGIMNASIA.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="gerontoGimnasia" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">GERONTO GIMNASIA</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Tendencias/PRENATAL.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="preNatal" onclick="showModalPlans(this)" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">PRE NATAL</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Noticias -->
+
+  <section id="Noticias" class="testimonials parallax2">
+
+    <div class="inner team">
+
+      <div class="team-members inner-details">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="item active">
+              <ul>
+                <li class="monial">
+                  <h1><span class="letraGym naranjaGym">Titulo Noticias 1:</span></h1>
+                  <h2><span class="condensed white">"Detalle de noticia número 1."</span></h2>
+                  <p class="light">Juan Nn</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="monial">
+                  <h1><span class="letraGym naranjaGym">Titulo Noticias 2:</span></h1>
+                  <h2><span class="condensed white">"Detalle de noticia número 2."</span></h2>
+                  <p class="light">Juan Nn</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="monial">
+                  <h1><span class="letraGym naranjaGym">Titulo Noticias 3:</span></h1>
+                  <h2><span class="condensed white">"Detalle de noticia número 3."</span></h2>
+                  <p class="light">Juan Nn</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="monial">
+                  <h1><span class="letraGym naranjaGym">Titulo Noticias 4:</span></h1>
+                  <h2><span class="condensed white">"Detalle de noticia número 4."</span></h2>
+                  <p class="light">Juan Nn</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <ul>
+                <li class="monial">
+                  <h1><span class="letraGym naranjaGym">Titulo Noticias 5:</span></h1>
+                  <h2><span class="condensed white">"Detalle de noticia número 5."</span></h2>
+                  <p class="light">Juan Nn</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- Galeria -->
+
+  <section id="Galeria">
+
+    <hr>
+
+    <h1 class="header light letraGym"><span class="naranjaGym">GALERÍA</span></h1>
+
+    <div class="container-fluid">
+
+      <br />
+      <br />
+
+      <div class="row">
+
+        <div class="col-sm-3"></div>
+
+        <div class="col-sm-6" id="carousel-bounding-box">
+          <div class="carousel slide" id="myCarousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item" data-slide-number="0">
+                <img src="images/Home/1.jpg">
+              </div>
+
+              <div class="item" data-slide-number="1">
+                <img src="images/Home/2.jpg">
+              </div>
+
+              <div class="item" data-slide-number="2">
+                <img src="images/Home/3.jpg">
+              </div>
+
+              <div class="item" data-slide-number="3">
+                <img src="images/Home/4.jpg">
+              </div>
+
+              <div class="item" data-slide-number="4">
+                <img src="images/Home/5.jpg">
+              </div>
+
+              <div class="item" data-slide-number="5">
+                <img src="images/Home/6.jpg">
+              </div>
+
+              <div class="item" data-slide-number="6">
+                <img src="images/Home/7.jpg">
+              </div>
+
+              <div class="item" data-slide-number="7">
+                <img src="images/Home/8.jpg">
+              </div>
+
+              <div class="item" data-slide-number="8">
+                <img src="images/Home/9.jpg">
+              </div>
+
+              <div class="item" data-slide-number="9">
+                <img src="images/Home/10.jpg">
+              </div>
+
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"></a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-3"></div>
+
+      </div>
+
+    </div>
+
+    <br />
+    <br />
+
+  </section>
+
+  <!-- Accesorios -->
+
+  <section id="Accesorios" class="container">
+
+    <div class="inner team">
+      <h1 class="header light subtitle-style"><span class="naranjaGym">SUPLEMENTOS Y ACCESORIOS</span></h1>
+
+      <div class="team-members inner-details">
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/HIPER%20CALORICOS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="hiperCaloricos" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">HIPER CALORICOS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/HIPO%20CALORICOS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="hipoCaloricos" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">HIPO CALORICOS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/CERO%20CARBOHIDRATOS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="ceroCarbo" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">CERO CARBOHIDRATOS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/QUEMADORES.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="quemadores" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">QUEMADORES</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/ENERGIA%20&%20RECUPERACION.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="energia" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">ENERGIA y RECUPERACION</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/LINEA%20NATURISTA.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="lineaNaturista" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">LINEA NATURISTA</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/GELES%20REDUCTORES.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="gelesReductores" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">GELES REDUCTORES</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-3 member animated" data-animation="fadeInUp" data-animation-delay="0">
+          <div class="member-inner">
+
+            <a class="team-image">
+						    <img src="images/Accesorio/ACCESORIOS%20FITNESS.jpg" alt="" width="100" height="250" class="img-rounded"/>
+						</a>
+
+            <div id="accesoriosFitness" onclick="showModalPlans(this);" class="member-details">
+              <div class="member-details-inner" style="cursor:pointer">
+                <h2 class="member-name light">ACCESORIOS FITNESS</h2>
+                <img src="images/Logo/view.png" alt="" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contactenos -->
+
+  <section id="Contactenos" class="container parallax4">
+
+    <div class="inner contact">
+      <div class="contact-form">
+
+        <h1 class="header light subtitle-style"><span class="naranjaGym">CONTACTENOS</span></h1>
+        <p class="h-desc white"><img src="images/Social/whatsapp.png" alt=""> <span class="bold" style="text-shadow: 0 3px 4px rgba(0, 0, 0, 0.34); color: rgba(0, 0, 0, 0.42);">+57 314 340 29 50</span></p>
+
+        <form id="contact-us" method="post" action="#">
+          <div class="col-xs-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+            <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
+            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Telefono" />
+          </div>
+          <div class="col-xs-6 animated" data-animation="fadeInRight" data-animation-delay="400">
+            <textarea name="message" id="message" class="form textarea" placeholder="Comentarios" style="resize: none;"></textarea>
+          </div>
+          <div class="relative fullwidth col-xs-12">
+            <button type="submit" id="submit" name="submit" class="btn btn-primary size-boton">Enviar</button>
+          </div>
+          <div class="clear"></div>
+          <br />
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Musica -->
+
+    <embed src="images/Major Lazer - Know No Better (feat. Quavo).mp3" autostart="true" loop="true" width="0" height="0"></embed>
+
+  </section>
+
+  <!-- Pie de pagina -->
+
+  <footer id="footer" class="footer">
+
+    <a href=""><img src="images\Home\footer.jpg" width="200" alt="Logo" style="margin-bottom: 15px" /></a>
+
+    <div class="socials animated" data-animation="fadeInLeft" data-animation-delay="400">
+      <a href="https://www.facebook.com/" target="_blank" class="social margin-image">
+				  <i class="fa"><img src="images/Social/facebook.png" alt=""></i>
+			  </a> &nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/?hl=es" class="social margin-image">
+				  <i class="fa"><img src="images/Social/instagram.png" alt=""></i>
+			  </a> &nbsp;&nbsp;&nbsp;
+      <a href="https://www.youtube.com/?gl=CO&hl=es-419" target="_blank" class="social margin-image">
+				  <i class="fa"><img src="images/Social/youtube.png" alt=""></i>
+			  </a>
+    </div>
+
+    <p class="copyright normal">© 2017 <span class="naranjaGym">Gym<span class="azulGym">2</span>You.</span> Todos los derechos reservados.</p>
+
+  </footer>
+
+  <!-- Modal -->
+
+  <button id="btnMainModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" style="display:none;"></button>
+
+  <div id="app">
+    <div id="mainModal" class="modal fade bs-example-modal-lg" tabindex="<-1></-1>" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header modal-header-main">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 id="tlModal" class="modal-title text-center font-title">
+								  <!--Titulo Planes-->
+							  </h4>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4" id="image-modal">
+                  <!--Imagenes Planes-->
+                </div>
+                <div class="col-md-8">
+                  <div class="text-justify" id="content-modal"></div>
+                  <div class="text-justify" id="content-modal-text"></div>
+                  <!--Texto Planes-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="componentModal" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-medium" style="display:none;"></button>
+
+  <div class="modal fade bs-modal-medium" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header modal-header-comp">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="showModalMain()"><span aria-hidden="true">&times;</span></button>
+          <h4 id="tlModalComp" class="modal-title text-center font-title" style="color: #132732;"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <p id="content-components"></p>
+          </div>
+          <div class="modal-footer modal-footer-comp">
+            <button type="button" class="btn btn-primary boton" data-dismiss="modal" onclick="showModalMain()">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="sesion" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-sesion-modal-lg" style="display: none"></button>
+
+  <div class="modal fade bs-sesion-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+
+    <div class="modal-dialog modal-lg modal-size" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-header modal-header-comp">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title text-center font-title" style="color: #506c92;"> SESIÓN DE CORTESIA</h4>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="container">
+
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input class="form-control" id="nombre" type="text" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo:</label>
+              <div class="input-group">
+                <div class="input-group-addon">@</div>
+                <input class="form-control" id="correo" type="text" placeholder="Correo">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Telefono:</label>
+              <input class="form-control" id="telefono" type="text" placeholder="Telefono">
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha:</label>
+              <input class="form-control" id="fecha" type="date">
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección:</label>
+              <input class="form-control" id="direccion" type="text" placeholder="Dirección">
+            </div>
+
+            <div class="text-center">
+              <button class="btn btn-primary">Enviar</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS Files -->
+
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="js/modernizr-latest.js"></script>
+  <script type="text/javascript" src="js/SmoothScroll.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.superslides.js"></script>
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <script type="text/javascript">
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  </script>
+
+  <script>
+    $("a.about-icon").hover(function() {
+      $(this).children("i").addClass("fa-spin");
+    }, function() {
+      $(this).children("i").removeClass("fa-spin");
+    });
+  </script>
+
+</body>
+
+</html>
