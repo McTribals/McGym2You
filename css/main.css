@@ -1,7 +1,15 @@
-.naranjaGym{
-    color:#EB7533;
+body{
+	background-color:#e6f2ff;
 }
 
-section{
-    padding-top: 70px;
+.naranjaGym {
+  color: #EB7533;
+}
+
+section {
+  padding-top: 70px;
+}
+
+#titulo-modal {
+  color: #5088b3;
 }
