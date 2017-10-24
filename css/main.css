@@ -6,6 +6,10 @@ body{
   color: #EB7533;
 }
 
+.cardAltura{
+  height: 310px;
+}
+
 section {
   padding-top: 70px;
 }
