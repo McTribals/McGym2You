@@ -5204,7 +5204,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #6c9dcb;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -7343,7 +7343,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   position: fixed;
-  width: 300px;
+  width: 60%;
   left: 0;
   top: 0;
   margin: 0;
@@ -7562,7 +7562,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #sidenav-overlay {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;

@@ -6,6 +6,10 @@ body{
   color: #EB7533;
 }
 
+.fondoNaranjaGym{
+  background-color: #EB7533 !important;
+}
+
 .cardAltura{
   height: 310px;
 }
